@@ -1,12 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "xyz.trolly.lanlimit",
+  "package": "xyz.trolly.lanlimit.mixin",
   "compatibilityLevel": "JAVA_11",
   "mixins": [
   ],
   "client": [
-    "LANLimit"
+    "LANLimitMixin"
   ],
   "injectors": {
     "defaultRequire": 1
