@@ -11,6 +11,7 @@ import net.minecraft.server.PlayerManager;
 
 @Mixin(PlayerManager.class)
 public class LANLimitMixin {
+
     @ModifyVariable(method = "<init>", at = @At(value = "HEAD"))
     private static int injected(int maxPlayers) {
 

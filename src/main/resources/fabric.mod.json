@@ -3,16 +3,11 @@
   "id": "lanlimit",
   "version": "${version}",
   "name": "LANLimit",
-  "description": "This Increases the LAN player limit to 64",
+  "description": "This Increases the LAN player limit to 20",
   "authors": [
     "Trolly"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
   "license": "MIT",
-  "icon": "assets/lanlimit/icon.png",
   "mixins": [
     "lanlimit.mixins.json"
   ],
