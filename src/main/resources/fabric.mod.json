@@ -2,9 +2,8 @@
   "schemaVersion": 1,
   "id": "lanlimit",
   "version": "${version}",
-
   "name": "LANLimit",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This Increases the LAN player limit to 64",
   "authors": [
     "Trolly"
   ],
@@ -12,19 +11,13 @@
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-
   "license": "CC0-1.0",
   "icon": "assets/lanlimit/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-  },
   "mixins": [
     "lanlimit.mixins.json"
   ],
-
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
