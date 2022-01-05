@@ -11,8 +11,8 @@ import net.minecraft.server.PlayerManager;
 
 @Mixin(PlayerManager.class)
 public class LANLimitMixin {
-
-    @ModifyVariable(method = "<init>()V", at = @At(value = "HEAD"), ordinal = 0)
+ //Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/util/registry/DynamicRegistryManager/Impl;Lnet/minecraft/world/WorldSaveHandler;I
+    @ModifyVariable(method = "<init>", at = @At(value = "HEAD"))
     private static int injected(int maxPlayers) {
 
         if (maxPlayers == 8) { return 64; }
